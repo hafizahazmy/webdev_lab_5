@@ -28,14 +28,14 @@
       ]
     };
 
-    // Displaying the title of the first book
-    console.log("Title of the first book:", booksData.books[0].title);
+    console.log(booksData.books[0].title);
+        console.log(booksData.books[0].author);
 
-    // Displaying the author of the second book
-    console.log("Author of the second book:", booksData.books[1].author);
+        // Loop through the students and display the subjects
+        booksData.books.forEach(book => {
+            console.log(book.genres);
+        });
 
-    // Displaying genres of all books
-    console.log("Genres of all books:", booksData.books.map(book => book.genres).flat());
   </script>
 </body>
 </html>
